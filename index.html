@@ -1,1 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maple Street Christmas Lights — Neighborhood Walking Tour</title>
+<meta name="description" content="A free, self-guided Christmas lights walking tour through six blocks of Maple Street, every December 1–24.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,500;0,8..60,600;0,8..60,700;1,8..60,500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+  <!-- HEADER -->
+  <header class="site-header" id="top">
+    <div class="snow" id="snow" aria-hidden="true"></div>
+    <div class="header-bar">
+      <a href="#top" class="brand">Maple Street Christmas Lights</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false">Menu</button>
+      <nav class="main-nav" id="mainNav">
+        <a href="#about">About</a>
+        <a href="#route">The Route</a>
+        <a href="#visit">Visitor Info</a>
+        <a href="#countdown">Countdown</a>
+      </nav>
+    </div>
+
+    <div class="hero">
+      <div class="hero-copy">
+        <h1>Six blocks of Christmas lights. Forty houses that mean it.</h1>
+        <p class="hero-sub">Every Christmas season since 2003, Maple Street and five of its neighbors deck out with more lights than is strictly reasonable — and everyone's welcome to walk through and see them, right up to Christmas Eve.</p>
+
+        <div class="hero-stats">
+          <div class="hero-stat"><strong>2003</strong><span>First Christmas lit</span></div>
+          <div class="hero-stat"><strong>6</strong><span>Blocks decked out</span></div>
+          <div class="hero-stat"><strong>~40</strong><span>Houses lit up</span></div>
+        </div>
+
+        <div class="hero-status">
+          <span class="hero-time" id="liveClock">--:--:--</span>
+          <span class="status-dot" id="statusDot"></span>
+          <span id="statusText">Checking tonight's hours…</span>
+        </div>
+        <a href="#route" class="btn btn--primary">See the route</a>
+      </div>
+
+      <figure class="hero-frame">
+        <img src="images/reindeer-dog.jpg" alt="A bulldog wearing knit reindeer antlers and a green harness">
+        <figcaption>Even the neighborhood dogs dress for the occasion.</figcaption>
+      </figure>
+    </div>
+
+    <svg class="strand" viewBox="0 0 1200 34" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0,6 C150,34 300,-14 450,6 C600,26 750,-14 900,6 C1000,20 1100,-6 1200,10" fill="none" stroke="#3a5744" stroke-width="1.5"/>
+      <g fill="#d9ac55">
+        <circle cx="60" cy="14" r="4"/><circle cx="220" cy="22" r="4"/><circle cx="380" cy="4" r="4"/>
+        <circle cx="540" cy="18" r="4"/><circle cx="700" cy="8" r="4"/>
+      </g>
+      <g fill="#9c3226">
+        <circle cx="140" cy="24" r="4"/><circle cx="300" cy="-2" r="4"/><circle cx="460" cy="20" r="4"/>
+        <circle cx="620" cy="0" r="4"/><circle cx="780" cy="16" r="4"/>
+      </g>
+      <g fill="#d9ac55">
+        <circle cx="860" cy="0" r="4"/><circle cx="1000" cy="14" r="4"/><circle cx="1140" cy="2" r="4"/>
+      </g>
+    </svg>
+  </header>
+
+  <main>
+
+    <!-- ABOUT -->
+    <section class="section" id="about">
+      <div class="section-inner split">
+        <div class="split-text">
+          <h2>How our Christmas got out of hand</h2>
+          <p>It started with three neighbors, a string of icicle lights, and too many extension cords. Nineteen Christmases later, it's forty houses, strings of tinsel on every porch, a shared spreadsheet for coordinating display nights, and a small but fierce rivalry over who gets the corner lot.</p>
+          <p>The tour is free, self-guided, and takes about forty minutes on foot at a reasonable pace — longer if you stop for cocoa and candy canes, which most people do.</p>
+          <ul class="fact-list">
+            <li>First lit for Christmas 2003 by three houses on Maple Street</li>
+            <li>Now spans six blocks and roughly 40 participating homes</li>
+            <li>Santa Claus holds court at the corner of Maple &amp; Holly on Saturdays, 6–8pm</li>
+          </ul>
+        </div>
+        <figure class="split-media">
+          <img src="images/santa_caus.jpeg" alt="Santa Claus in his red suit, carrying a large sack over his shoulder" class="portrait">
+          <figcaption>Santa takes photos and gift-list requests most Saturday evenings through Christmas Eve.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- THE ROUTE -->
+    <section class="section section--tint" id="route">
+      <div class="section-inner">
+        <h2>The Christmas lights route, stop by stop</h2>
+        <p class="section-lede">Start anywhere, but this is the order most people walk it in. About 0.6 miles end to end.</p>
+
+        <ol class="route-list">
+          <li>
+            <span class="route-num">1</span>
+            <div>
+              <h3>412 Maple St. — where Christmas began here</h3>
+              <p>The original house. Still runs the same string-light arches over a lit-up Christmas tree, just more of them every year.</p>
+            </div>
+          </li>
+          <li>
+            <span class="route-num">2</span>
+            <div>
+              <h3>Holly Avenue — the synchronized block</h3>
+              <p>Four houses in a row blink their lights to Christmas carols, broadcast on 89.1 FM as you walk past.</p>
+            </div>
+          </li>
+          <li>
+            <span class="route-num">3</span>
+            <div>
+              <h3>Chestnut Court — the inflatable field</h3>
+              <p>A cul-de-sac given over entirely to oversized inflatable snowmen and reindeer. Bring kids, or don't; either way, look up.</p>
+            </div>
+          </li>
+          <li>
+            <span class="route-num">4</span>
+            <div>
+              <h3>Corner of Maple &amp; Holly — Santa's chair</h3>
+              <p>Weekend evenings only, through Christmas Eve. Bring your own camera; there's no official photographer this year.</p>
+            </div>
+          </li>
+          <li>
+            <span class="route-num">5</span>
+            <div>
+              <h3>Birch Lane — the cocoa and candy cane stand</h3>
+              <p>Run by the block association, by donation. Usually open until the last house turns its Christmas lights off.</p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- VISITOR INFO -->
+    <section class="section" id="visit">
+      <div class="section-inner">
+        <h2>Before you head out</h2>
+        <div class="info-grid">
+          <div class="info-box">
+            <h3>Parking</h3>
+            <p>Street parking along Chestnut and the church lot on Birch Lane after 5pm. Please leave driveways clear for Christmas deliveries.</p>
+          </div>
+          <div class="info-box">
+            <h3>Getting around</h3>
+            <p>The full loop is flat and stroller-friendly. Sidewalks narrow near Chestnut Court on busy Christmas nights.</p>
+          </div>
+          <div class="info-box">
+            <h3>What to bring</h3>
+            <p>Warm layers, and a couple of dollars for the cocoa and candy cane stand if you'd like to support it.</p>
+          </div>
+          <div class="info-box">
+            <h3>Weather</h3>
+            <p>The tour runs rain, snow, or shine, but lights are dimmed in heavy weather. <a class="text-link" href="https://forecast.weather.gov/" target="_blank" rel="noopener noreferrer">Check tonight's forecast</a> before you go.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COUNTDOWN -->
+    <section class="section section--dark" id="countdown">
+      <div class="section-inner center">
+        <h2>Counting down to Christmas</h2>
+        <p class="section-lede section-lede--light" id="countdown-note">Lights run December 1–24, dusk until 10pm, right up to Christmas Eve.</p>
+        <div class="board" id="countdown-timer">
+          <div class="board-cell"><span id="cd-days">00</span><small>Days</small></div>
+          <div class="board-cell"><span id="cd-hours">00</span><small>Hours</small></div>
+          <div class="board-cell"><span id="cd-mins">00</span><small>Minutes</small></div>
+          <div class="board-cell"><span id="cd-secs">00</span><small>Seconds</small></div>
+        </div>
+        <p class="board-caption" id="board-caption">Counting down to opening night.</p>
+      </div>
+    </section>
+
+    <!-- TONIGHT'S STOP -->
+    <section class="section" id="tonight">
+      <div class="section-inner center narrow">
+        <h2>Not sure where to start?</h2>
+        <p class="section-lede">Pick a starting point and we'll point you at a stop from the route above.</p>
+        <button id="pickBtn" class="btn btn--secondary">Pick a starting stop</button>
+        <div class="pick-result" id="pickResult">
+          <p id="pickText">No stop picked yet.</p>
+        </div>
+        <p class="pick-count">Stops suggested so far: <span id="pickCount">0</span></p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div class="footer-col">
+        <h4>Maple Street Christmas Lights</h4>
+        <p>A neighborhood Christmas display, and a web development class project. Built to be shared, not to sell anything.</p>
+      </div>
+      <div class="footer-col">
+        <h4>On this page</h4>
+        <ul class="footer-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#route">The Route</a></li>
+          <li><a href="#visit">Visitor Info</a></li>
+          <li><a href="#countdown">Countdown</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Elsewhere</h4>
+        <p><a class="text-link" href="https://pages.github.com/" target="_blank" rel="noopener noreferrer">Built with GitHub Pages</a></p>
+      </div>
+    </div>
+    <p class="footer-bottom">© <span id="year"></span> Maple Street Christmas Lights. Merry Christmas, and see you on the block.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
